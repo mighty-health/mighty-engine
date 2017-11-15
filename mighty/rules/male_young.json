@@ -1,0 +1,67 @@
+{
+    "immunizations": {
+
+        "influenza": {
+            "title": "Influenza",
+            "importance": "high",
+            "code": {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "value": "140"
+            },
+            "schedule": {
+                "repeats": "True",
+                "start_age": 1,
+                "cycle_years": 1,
+                "season": {
+                    "start_month": 8,
+                    "end_month": 2
+                }
+            },
+            "description" : ""
+        },
+
+        "tdap": {
+            "title": "Tdap",
+            "importance": "high",
+            "code": {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "value": "115"
+            },
+            "schedule": {
+                "repeats": "True",
+                "start_age": 11,
+                "cycle_years": 10,
+                "season": ""
+            },
+            "description" : ""
+        },
+
+        "mmr": {
+            "title": "MMR",
+            "importance": "high",
+            "code": {
+                "system": "http://hl7.org/fhir/sid/cvx",
+                "value": "03"
+            },
+            "schedule": {
+                "repeats": "True",
+                "start_age": 1,
+                "cycle_years": 10,
+                "season": ""
+            },
+            "description" : ""
+        },
+
+        "varicella": {
+
+        }
+    },
+
+    "examinations": {
+
+    },
+
+    "metrics": {
+
+    }
+}

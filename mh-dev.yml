@@ -1,18 +1,24 @@
 name: mh-dev
 channels:
+- conda-forge
+- http://conda.anaconda.org/gurobi
 - defaults
 dependencies:
+- aniso8601=1.2.0=py35_0
+- flask-restplus=0.10.1=py35_0
 - asn1crypto=0.22.0=py35h0d675fe_1
 - bleach=2.0.0=py35h055c768_0
 - ca-certificates=2017.08.26=h1d4fec5_0
 - certifi=2017.7.27.1=py35h19f42a1_0
 - cffi=1.10.0=py35h796c292_1
 - chardet=3.0.4=py35hb6e9ddf_1
+- click=6.7=py35h353a69f_0
 - cryptography=2.0.3=py35hef72dfd_1
 - dbus=1.10.22=h3b5a359_0
 - decorator=4.1.2=py35h3a268aa_0
 - entrypoints=0.2.3=py35h48174a2_2
 - expat=2.2.4=h6ea4f2b_2
+- flask=0.12.2=py35h679e90e_0
 - fontconfig=2.12.4=h88586e7_1
 - freetype=2.8=h52ed37b_0
 - glib=2.53.6=h5d9569c_2
@@ -28,6 +34,7 @@ dependencies:
 - ipython_genutils=0.2.0=py35hc9e07d0_0
 - ipywidgets=7.0.0=py35h8ebd919_0
 - isodate=0.6.0=py35h6a86938_0
+- itsdangerous=0.24=py35h7c46880_1
 - jedi=0.10.2=py35hc33c70f_0
 - jinja2=2.9.6=py35h90b8645_1
 - jpeg=9b=h024ee3a_2
@@ -88,6 +95,7 @@ dependencies:
 - urllib3=1.22=py35h2ab6e29_0
 - wcwidth=0.1.7=py35hcd08066_0
 - webencodings=0.5.1=py35hb6cf162_1
+- werkzeug=0.12.2=py35hbfc1ea6_0
 - wheel=0.29.0=py35h601ca99_1
 - widgetsnbextension=3.0.2=py35h0be620c_1
 - xz=5.2.3=h55aa19d_2
@@ -100,3 +108,5 @@ dependencies:
   - jupyter-console==5.2.0
   - jupyter-core==4.3.0
   - prompt-toolkit==1.0.15
+prefix: /home/ddhar/anaconda3/envs/mh-dev
+

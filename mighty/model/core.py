@@ -32,7 +32,14 @@ def _get_segment_model(patient_id):
     return segment_model
 
 def get_summary(patient_id):
-    pass
+    if _valid_patient_id(patient_id=patient_id):
+        segment_model = _get_segment_model(patient_id=patient_id)
+        return segment_model.get_summary(
+            patient_id=patient_id,
+            smart_client=smart
+            )
+    else:
+        return None
 
 def get_immunization_checklist(patient_id):
     if _valid_patient_id(patient_id=patient_id):
@@ -45,7 +52,21 @@ def get_immunization_checklist(patient_id):
         return None
 
 def get_screening_checklist(patient_id):
-    pass
+    if _valid_patient_id(patient_id=patient_id):
+        segment_model = _get_segment_model(patient_id=patient_id)
+        return segment_model.get_screening_checklist(
+            patient_id=patient_id,
+            smart_client=smart
+            )
+    else:
+        return None
 
 def get_health_metrics(patient_id):
-    pass
+    if _valid_patient_id(patient_id=patient_id):
+        segment_model = _get_segment_model(patient_id=patient_id)
+        return segment_model.get_health_metrics(
+            patient_id=patient_id,
+            smart_client=smart
+            )
+    else:
+        return None

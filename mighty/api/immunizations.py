@@ -1,8 +1,6 @@
 from .. import model
-from flask import request
+
 from flask_restplus import Namespace, Resource, reqparse, fields
-import sys
-import traceback
 
 ns = Namespace(name='immunizations',
                description='Operations related to immunizations')
@@ -33,7 +31,7 @@ class ImmunizationChecklist(Resource):
     @ns.marshal_with(immunization)
     def get(self):
         """
-        Returns immunization checklist for given patient
+        Returns the immunization checklist for the given patient.
 
         Test the endpoint with this sample patient_id:
         a33d3135-2c7a-43ad-8804-3c2d3f492253
@@ -49,7 +47,6 @@ class ImmunizationChecklist(Resource):
         args = parser.parse_args()
         result = model.get_immunization_checklist(patient_id=args['patient_id'])
         if result is None:
-            # return None, 404
             ns.abort(404, 'Patient not found.')
         else:
             return result, 201

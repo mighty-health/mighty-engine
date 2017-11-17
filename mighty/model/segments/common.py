@@ -8,6 +8,7 @@ def _get_patient_demographics(patient_id, smart_client):
     demographics = {}
     demographics['gender'] = patient.gender
     demographics['age'] = int((_today-patient.birthDate.date).days/365)
+    demographics['birthDate'] = patient.birthDate.date
     if (demographics['age'] <= 17):
         age_classification = 'child'
     elif (demographics['age'] >= 18) and (demographics['age'] <= 39):

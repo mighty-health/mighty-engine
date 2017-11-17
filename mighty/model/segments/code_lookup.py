@@ -30,3 +30,41 @@ immunization_lookup = {
         'disease': 'Measles, Mumps, Rubella'
     },
 }
+
+health_metric_lookup = {
+    'Blood Pressure': {
+        'code': '55284-4'
+    },
+    'Systolic Blood Pressure': {
+        'code': '8480-6'
+    },
+    'Diastolic Blood Pressure': {
+        'code': '8462-4'
+    },
+    'Total Cholesterol': {
+        'code': '2093-3'
+    },
+    'Glucose': {
+        'code': '2339-0'
+    },
+    'Body Mass Index': {
+        'code' : '39156-5'
+    },
+    'Body Height': {
+        'code' : '8302-2'
+    },
+    'Body Weight': {
+        'code' : '29463-7'
+    }
+}
+
+condition_lookup = {
+    'Diabetes': {
+        'system': 'SNOMED-CT',
+        'code': '44054006'
+    },
+    'Coronary Heart Disease': {
+        'system': 'SNOMED-CT',
+        'code': '53741008'
+    }
+}
